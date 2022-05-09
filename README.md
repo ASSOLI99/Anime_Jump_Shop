@@ -1,2 +1,2 @@
 # LOADING... Anime Jump Shop
-HTML, CSS, JS, BootStrap, PHP, MySQL
+HTML, CSS, JS, TailWind , PHP, MySQL
