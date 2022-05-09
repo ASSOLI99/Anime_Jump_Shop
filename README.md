@@ -1,2 +1,2 @@
-# Anime Jump Shop
+# LODING... Anime Jump Shop
 HTML, CSS, JS, BootStrap, PHP, MySQL
