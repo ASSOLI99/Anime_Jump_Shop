@@ -95,4 +95,7 @@ text-shadow: 0 0 11px var(--main-dark);
     text-shadow: 0 0 11px var(--main-dark);
     box-shadow: none;
 }
+#footer{
+    background-color: var(--main-dark);
+}
 
