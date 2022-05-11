@@ -35,6 +35,7 @@ color: var(--main-blue) !important;
 }
 #dropdown{
     top: 45px;
+    right: 20px;
 }
 #phone-drop{
     color: var(--main-light) !important;
