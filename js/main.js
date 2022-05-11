@@ -131,3 +131,19 @@ cManga.forEach(el=>el.addEventListener("click",()=>{
         characters.classList.add("hidden");
     }
 }))
+//quantity box
+let inc=document.querySelector("#inc");
+let dec=document.querySelector("#dec");
+let quantity=document.querySelector("#quantity");
+inc.addEventListener("click",()=>{
+    if(quantity.value==99){
+        return;
+    }
+    quantity.value++
+});
+dec.addEventListener("click",()=>{
+    if(quantity.value==1){
+        return;
+    }
+    quantity.value--;
+})
