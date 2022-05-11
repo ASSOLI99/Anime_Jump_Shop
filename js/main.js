@@ -33,6 +33,7 @@ categorys.addEventListener("click",()=>{
     categorys.classList.toggle("hidden");
         categorys.classList.toggle("absolute");
 })
+//catagories
 let cCharacters=document.querySelectorAll(".c-characters");
 let cItems=document.querySelectorAll(".c-items");
 let cCosplay=document.querySelectorAll(".c-cosplay");
