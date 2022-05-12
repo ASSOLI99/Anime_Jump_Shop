@@ -132,18 +132,18 @@ cManga.forEach(el=>el.addEventListener("click",()=>{
     }
 }))
 //quantity box
-let inc=document.querySelector("#inc");
-let dec=document.querySelector("#dec");
+let inc=document.querySelectorAll("#inc");
+let dec=document.querySelectorAll("#dec");
 let quantity=document.querySelector("#quantity");
-inc.addEventListener("click",()=>{
-    if(quantity.value==99){
+inc.forEach(e=>e.addEventListener("click",function(){
+    if(this.parentElement.childNodes[3].value==99){
         return;
     }
-    quantity.value++
-});
-dec.addEventListener("click",()=>{
-    if(quantity.value==1){
+   this.parentElement.childNodes[3].value++
+}));
+dec.forEach(e=>e.addEventListener("click",function(){
+    if(this.parentElement.childNodes[3].value==1){
         return;
     }
-    quantity.value--;
-})
+   this.parentElement.childNodes[3].value--
+}));
