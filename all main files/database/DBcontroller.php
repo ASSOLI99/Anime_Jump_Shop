@@ -29,5 +29,3 @@ class DBcontroller{
         }
     }
 }
-//DBController object
-$db=new DBcontroller();
