@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-<!-- font family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">    
-<!-- TailWind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-<!-- font-awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- Custom CSS File -->
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
+<!-- header file -->
+<?php include("header.php") ?>
     
 <!-- nav start -->
 <nav class="sticky top-0 z-10 my-nav bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
@@ -295,42 +278,5 @@
   </div>
 <!-- new collection end -->
   <!-- footer start -->
-  <footer id="footer" class="w-full">
-    <div class="p-3 container gap-4 flex mx-auto flex-row flex-wrap justify-center lg:justify-between lg:gap-1">
-      <div class="about  w-60 flex flex-col items-center md:items-start ">
-       <h2><a href="./index.php" class="text-center md:text-left text-white font-bold text-2xl my-1 hover:text-blue-300">A/J</a></h2>
-        <p class="text-gray-300 text-center md:text-left ">Anime Jump Shop a web store that will give you a spital offers</p>
-      </div>
-      <div class="email w-60 flex flex-col items-center md:items-start">
-        <h2 class="text-center md:text-left text-white font-bold text-2xl my-1">Newsletters</h2>
-        <form action="" class="Ebox flex flex-row ">
-          <input type="email" placeholder="Email*" class="w-4/6 focus:outline-none hover:bg-gray-100">
-          <input type="submit" value="Subscribe" class="bg-blue-500 cursor-pointer hover:bg-blue-400 w-2/6">
-        </form>
-      </div>
-      <div class="w-60 flex flex-col items-center md:items-start">
-        <h2 class="text-center md:text-left text-white font-bold text-2xl my-1">Information</h2>
-        <ul class="infoList flex flex-col items-center md:items-start">
-          <li><a href="#" class="my-1 text-white text-center hover:text-blue-300">About Us</a></li>
-          <li><a href="#" class="my-1 text-white text-center hover:text-blue-300">Delivery Information</a></li>
-          <li><a href="#" class="my-1 text-white text-center hover:text-blue-300">Privacy Policy</a></li>
-          <li><a href="#" class="my-1 text-white text-center hover:text-blue-300">Terms & Conditions</a></li>
-        </ul>
-      </div>
-      <div class="accounts w-60 flex flex-col items-center md:items-start ">
-        <h2 class="text-center md:text-left text-white font-bold text-2xl my-1">Account</h2>
-        <ul class="infoList flex flex-col items-center md:items-start">
-          <li><a href="#" class="my-1 text-white text-center hover:text-blue-300">My Account</a></li>
-          <li><a href="#" class="my-1 text-white text-center hover:text-blue-300">Order History</a></li>
-          <li><a href="#" class="my-1 text-white text-center hover:text-blue-300">Wish List</a></li>
-          <li><a href="#" class="my-1 text-white text-center hover:text-blue-300">Newsletters</a></li>
-        </ul>
-      </div>
-    </div>
-    <p class="text-white text-center mt-3 p-1">&copy;All Copyrights <span class="text-blue-300">ABD</span> Reverse</p>
-    </footer>
-  <!-- footer end -->
-  <!-- js files #################-->
-    <script src="./js/main.js"></script>
-</body>
-</html>
+<!-- footer file -->
+<?php include("footer.php") ?>
