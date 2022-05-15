@@ -78,7 +78,7 @@
 ?>
 <?php array_map(function($item){ ?>  
 <div class="shop-item md:w-1/6 bg-gray-100 flex flex-col items-center p-1 pb-2 sm:w-60 ">
-    <div class="item-img bg-[url('<?php echo $item["item_image"] ?? "./assets/pr-1.jpg"; ?>')] bg-cover bg-center w-full h-72"></div>
+    <div class="item-img bg-[url('<?php echo $item["item_image"] ?? "./assets/pr-1.jpg"; ?>')] bg-cover bg-center w-full h-72 text-center md:text-left"><a href="<?php printf("%s?id=%s","./product.php",$item["item_id"]) ?>" class="p-2 text-white bg-blue-700 rounded-full hover:bg-blue-500">See It</a></div>
     <h2 class="item-name my-2"><?php echo $item["item_name"] ?? "unknown"; ?></h2>
     <p class="item-stars">
       <span class="text-yellow-300"><i class="fa-solid fa-star"></i></span>

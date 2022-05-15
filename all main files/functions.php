@@ -10,5 +10,3 @@ $db=new DBcontroller();
 
 //product object
 $product=new product($db);
-
-print_r($product->getData()); 

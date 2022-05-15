@@ -1,15 +1,21 @@
+<?php 
+    $item_id=$_GET["id"]??1;
+    foreach($product->getData() as $item):
+        if($item_id == $item["item_id"]):
+?>
+
 <div class="product w-full my-10">
       <div class="container mx-auto flex flex-col justify-center items-center md:justify-start md:flex-row flex-wrap">
           <div class="left-side p-5 w-5/6 md:w-1/2 h-96 flex flex-col ">
-            <div class="img-holder w-6/6 md:w-4/6 h-96 bg-center bg-[url('./assets/pr-2.jpg')] bg-cover" ></div>
+            <div class="img-holder w-6/6 md:w-4/6 h-96 bg-center bg-[url('<?php echo $item["item_image"] ?? "./assets/pr-1.jpg"; ?>')] bg-cover" ></div>
             <div class="flex flex-row w-6/6 md:w-4/6">
                 <button class="p-2 bg-red-500 hover:bg-red-600 text-white w-1/2"><a href="./cart.php">Proceed To Buy</a></button>
                 <button class="p-2 bg-yellow-300 hover:bg-yellow-400 text-black w-1/2">Add To Cart </button>
             </div>
           </div>
           <div class="right-side  w-5/6 md:w-1/2 flex flex-col">
-            <h2 class="text-xl">Bleach Stuff</h2>
-            <p class="text-sm">bleach anime</p>
+            <h2 class="text-xl"><?php echo $item["item_name"] ?? "unknown" ?></h2>
+            <p class="text-sm"><?php echo $item["item_brand"] ?? "unknown" ?></p>
             <p class="item-stars">
                 <span class="text-yellow-300"><i class="fa-solid fa-star"></i></span>
                 <span class="text-yellow-300"><i class="fa-solid fa-star"></i></span>
@@ -19,8 +25,8 @@
                 <span class="text-blue-400">20,564 ratings | 1000+ answered question</span>
             </p>
             <hr>
-            <p>M.R.P <del> $162.00 </del></p>
-            <p>Deal Price <span class="text-red-400">$152.00</span> include of taxes</p>
+            <p>M.R.P <del> $<?php echo $item["item_price"]+10?? "0" ?> </del></p>
+            <p>Deal Price <span class="text-red-400">$<?php echo $item["item_price"] ?? "0" ?></span> include of taxes</p>
             <p>You Save: <span class="text-red-400">$10.00</span></p>
             <div class="icons flex flex-row  flex-wrap justify-between mt-4 gap-4">
                 <div class="flex flex-col justify-center md:justify-start">
@@ -64,3 +70,9 @@
           </div>
       </div>
   </div>
+
+  <?php 
+    endif;
+endforeach;
+
+?>
