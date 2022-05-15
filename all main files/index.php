@@ -1,7 +1,10 @@
-    <!-- header file start -->
-<?php include("./Template/header.php") ?>
+<!-- header file start -->
+<?php
+ob_start();
+include("./Template/header.php") 
+?>
     <!-- header end -->
-
+    
     <!-- nav bar start -->
 <?php include("./Template/nav_bar.php") ?>
     <!-- nav bar end-->
