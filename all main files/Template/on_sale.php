@@ -18,7 +18,7 @@
     
     </p>
     <p class="item-price font-bold"><del class="font-light text-gray-500">$<?php echo $item["item_price"]+50 ?? "0" ?>$</del> $<?php echo $item["item_price"]?? "0" ?></p>
-    <button class="item-button rounded border bg-blue-700 hover:bg-yellow-300 p-1 text-white hover:text-black"><a href="./product.php">Add to Cart</a></button>
+    <button class="item-button rounded border bg-blue-700 hover:bg-yellow-300 p-1 text-white hover:text-black"><a href="<?php printf("%s?id=%s","./product.php",$item["item_id"]) ?>">Add to Cart</a></button>
   </div>
   <?php } ?>
 </div>

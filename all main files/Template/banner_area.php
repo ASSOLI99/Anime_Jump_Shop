@@ -5,19 +5,19 @@
             <div class="glide__slide inside1 flex justify-center items-center">
               <div class="main-text flex flex-col justify-center items-center">
                       <p class="text-center mb-9">Buy this amazing offer With 50% discount</p>
-                      <button class="p-1 mt-9 rounded bg-[#DFF6FF] text-[#051367] font-bold hover:text-[#DFF6FF] hover:bg-[#051367]"><a href="./product.php">Shop Now</a></button>
+                      <button class="p-1 mt-9 rounded bg-[#DFF6FF] text-[#051367] font-bold hover:text-[#DFF6FF] hover:bg-[#051367]"><a href="./product.php?id=2">Shop Now</a></button>
               </div>
             </div>
             <div class="glide__slide inside2 flex justify-center items-center">
               <div class="main-text flex flex-col justify-center items-center">
                 <p class="text-center mb-9">Buy this amazing offer With 50% discount</p>
-                <button class="p-1 mt-9 rounded bg-[#DFF6FF] text-[#051367] font-bold hover:text-[#DFF6FF] hover:bg-[#051367]"><a href="./product.php">Shop Now</a></button>
+                <button class="p-1 mt-9 rounded bg-[#DFF6FF] text-[#051367] font-bold hover:text-[#DFF6FF] hover:bg-[#051367]"><a href="./product.php?id=1">Shop Now</a></button>
                </div>
             </div>
             <div class="glide__slide inside3 flex justify-center items-center">
               <div class="main-text flex flex-col justify-center items-center">
                 <p class="text-center mb-9">Buy this amazing offer With 50% discount</p>
-                <button class="p-1 mt-9 rounded bg-[#DFF6FF] text-[#051367] font-bold hover:text-[#DFF6FF] hover:bg-[#051367]"><a href="./product.php">Shop Now</a></button>
+                <button class="p-1 mt-9 rounded bg-[#DFF6FF] text-[#051367] font-bold hover:text-[#DFF6FF] hover:bg-[#051367]"><a href="./product.php?id=3">Shop Now</a></button>
               </div>
             </div>
           </div>

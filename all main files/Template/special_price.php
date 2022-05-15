@@ -26,7 +26,7 @@
     
     </p>
     <p class="item-price font-bold">$<?php echo $item["item_price"] ?? "0"; ?></p>
-    <button class="item-button rounded border bg-blue-700 hover:bg-yellow-300 p-1 text-white hover:text-black"><a href="./product.php">Add to Cart</a></button>
+    <button class="item-button rounded border bg-blue-700 hover:bg-yellow-300 p-1 text-white hover:text-black"><a href="<?php printf("%s?id=%s","./product.php",$item["item_id"]) ?>">Add to Cart</a></button>
   </div>
 <?php },$product_shuffle) ?>
 </div>
@@ -47,7 +47,7 @@
     
     </p>
     <p class="item-price font-bold">$<?php echo $item["item_price"] ?? "0"; ?></p>
-    <button class="item-button rounded border bg-blue-700 hover:bg-yellow-300 p-1 text-white hover:text-black"><a href="./product.php">Add to Cart</a></button>
+    <button class="item-button rounded border bg-blue-700 hover:bg-yellow-300 p-1 text-white hover:text-black"><a href="<?php printf("%s?id=%s","./product.php",$item["item_id"]) ?>">Add to Cart</a></button>
   </div>
 <?php },$product_shuffle) ?>
 </div>
@@ -68,7 +68,7 @@
     
     </p>
     <p class="item-price font-bold">$<?php echo $item["item_price"] ?? "0"; ?></p>
-    <button class="item-button rounded border bg-blue-700 hover:bg-yellow-300 p-1 text-white hover:text-black"><a href="./product.php">Add to Cart</a></button>
+    <button class="item-button rounded border bg-blue-700 hover:bg-yellow-300 p-1 text-white hover:text-black"><a href="<?php printf("%s?id=%s","./product.php",$item["item_id"]) ?>">Add to Cart</a></button>
   </div>
 <?php },$product_shuffle) ?>
 </div>
@@ -89,7 +89,7 @@
     
     </p>
     <p class="item-price font-bold">$<?php echo $item["item_price"] ?? "0"; ?></p>
-    <button class="item-button rounded border bg-blue-700 hover:bg-yellow-300 p-1 text-white hover:text-black"><a href="./product.php">Add to Cart</a></button>
+    <button class="item-button rounded border bg-blue-700 hover:bg-yellow-300 p-1 text-white hover:text-black"><a href="<?php printf("%s?id=%s","./product.php",$item["item_id"]) ?>">Add to Cart</a></button>
   </div>
 <?php },$product_shuffle) ?>
 </div>
